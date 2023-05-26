@@ -1,4 +1,5 @@
 import { useNavigate } from "react-router-dom";
+import { Contact } from "../../ui";
 
 export const LoginPage = () => {
   const navigate = useNavigate();
@@ -9,6 +10,7 @@ export const LoginPage = () => {
   };
   return (
     <>
+      <Contact />
       <div className="container m-5">
         <h1>Login</h1>
         <hr />
