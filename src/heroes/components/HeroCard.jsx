@@ -19,11 +19,11 @@ export const HeroCard = ({
   const heroImageUrl = `/assets/heroes/${id}.jpg`;
 
   return (
-    <div className="col">
+    <div className="col animate__animated animate__fadeInLeft">
       <div className="card">
         <div className="row not-gutters">
           <div className="col-4">
-            <img src={heroImageUrl} className="card-img" alt={superhero} />
+            <img src={heroImageUrl} className="card-img " alt={superhero} />
           </div>
           <div className="col-8">
             <div className="card-body">
@@ -33,7 +33,7 @@ export const HeroCard = ({
               <p className="card-text">
                 <small className="text-muted">{first_appearance}</small>
               </p>
-              <Link to={`/hero${id}`}>Mas...</Link>
+              <Link to={`/hero/${id}`}>Mas...</Link>
             </div>
           </div>
         </div>
